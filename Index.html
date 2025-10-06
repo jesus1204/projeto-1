@@ -1,133 +1,179 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1
-    <title>Veterinário juntos para sempre</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veterinário – Juntos para Sempre</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #333;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 14px 20px;
+      display: inline-block;
+    }
+
+    nav a:hover {
+      background-color: #4CAF50;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #4CAF50;
+      text-align: center;
+    }
+
+    .servicos, .equipe {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 20px;
+      width: 250px;
+      text-align: center;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      margin-top: 40px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 400px;
+      margin: 20px auto;
+    }
+
+    input, textarea {
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      width: 100%;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
 </head>
-
 <body>
-    <header class=" p-5">
 
-        <nav class="container d-flex justify-content-between align-items-center" >
-            <img src="img/logo.png" class="nav-img " loading="lazy">
-            <ul class="nav mt-5">
-                <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
-                <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
-            </ul>
-            <div id="acessibilidade" class="menu-acessibilidade"> 
-                <button id="botao-acessibilidade" class="btn btn-primary fw-bold rotacao-botao" aria-expanded="false">acessibilidade</button>
-                <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista">
-                    <button id="aumentar-fonte" class="btn btn-primary fw-bold" aria-label="Aumentar o tamanho da fonte">A+</button>
-                    <button id="diminuir-fonte" class="btn btn-primary fw-bold" aria-label="diminuir o tamanho da fonte">A-</button>
-                    <button id="alterna-contraste" class="btn btn-primary fw-bold" aria-label="Alterna o contraste de cores"> <i class="bi bi-shadows"></i></button>         
-                </div>
-            </div>
-        </nav>
-       
-    </header>
+  <header>
+    <h1>Veterinário – Juntos para Sempre</h1>
+    <p>Cuidando com amor dos seus melhores amigos</p>
+  </header>
 
+  <nav>
+    <a href="#inicio">Início</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#equipe">Equipe</a>
+    <a href="#contato">Contato</a>
+  </nav>
 
-    <main class="container my-5">
+  <section id="inicio">
+    <h2>Bem-vindo à nossa clínica!</h2>
+    <p>Oferecemos atendimento veterinário com carinho, responsabilidade e dedicação. Aqui, o seu pet é parte da nossa família.</p>
+  </section>
 
-        <section id="inicio" class="my-5">
-            <div class="inicio-fundo d-flex justify-content-between align-items-center">
-                <div class="esquerda-conteudo">
-                    <h1 class="display-4 text-white fst-italic fw-bold">Boas-vindas a</h1>
-                    <img src="img/logo-2.png" class="mb-3" width="563"
-                        height="278" loading="lazy">
-                    <a href="#tropicalia"
-                        class="btn btn-primary btn-lg botao-inicio fw-semibold">Quero
-                        conhecer!</a>
-                </div>
-                <img src="img/lossy-page1-640px-Os_Mutantes.tif (1).png" alt="A imagem apresenta o grupo musical Os mutantes, sao tres pessoas cantando em um microfone" title="Os mutantes - CC0 Domínio Público / Acervo Arquivo Nacional" class="img-fluid img-inicio">
+  <section id="servicos">
+    <h2>Nossos Serviços</h2>
+    <div class="servicos">
+      <div class="card">
+        <h3>Consultas</h3>
+        <p>Atendimento clínico completo para cães e gatos.</p>
+      </div>
+      <div class="card">
+        <h3>Vacinação</h3>
+        <p>Proteja seu pet com nossas vacinas atualizadas e seguras.</p>
+      </div>
+      <div class="card">
+        <h3>Banho e Tosa</h3>
+        <p>Deixe seu pet limpo, cheiroso e feliz!</p>
+      </div>
+    </div>
+  </section>
 
-              </div>
-        </section>
+  <section id="equipe">
+    <h2>Nossa Equipe</h2>
+    <div class="equipe">
+      <div class="card">
+        <h3>Dr. João Silva</h3>
+        <p>Veterinário clínico geral</p>
+      </div>
+      <div class="card">
+        <h3>Dra. Maria Santos</h3>
+        <p>Especialista em felinos</p>
+      </div>
+      <div class="card">
+        <h3>Carla Nunes</h3>
+        <p>Assistente veterinária</p>
+      </div>
+    </div>
+  </section>
 
-        <section id="tropicalia" class="my-5 pt-6 secao-tropicalia" tabindex="0" aria-label="Seção explicativa sobre a tropicália">
-            <div class="container d-flex align-items-center ">
-                <div class="col-4 d-flex justify-content-center ">
-                    <img src="img/image (1).png" class="rounded-pill" width="273" height="331" loading="lazy">
-                </div>
-                <div class="col-5">
-                    <h2>O que foi a Tropicália?</h2>
-                    <p class="p-2">A Tropicália, também conhecida como Tropicalismo, foi um movimento cultural
-                        brasileiro que surgiu na década de 1960, tendo seu auge entre 1967 e 1968. Esse movimento
-                        abrangeu várias expressões artísticas, como a música, o cinema, o teatro e as artes plásticas, e
-                        teve como principal característica a mistura de elementos da cultura brasileira tradicional com
-                        influências estrangeiras, especialmente do rock e da música pop. Fonte: Site Toda a matéria</p>
-                </div>
-            </div>
-        </section>
+  <section id="contato">
+    <h2>Fale Conosco</h2>
+    <form onsubmit="enviarMensagem(); return false;">
+      <input type="text" id="nome" placeholder="Seu nome" required>
+      <input type="email" id="email" placeholder="Seu e-mail" required>
+      <textarea id="mensagem" rows="5" placeholder="Sua mensagem..." required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
 
-        <section id="galeria" tabindex="0" aria-label="Seção de galeria de imagens">
-            <h2 class="text-center pt-5">Galeria</h2>
-            <div class="container p-3 mt-3 fundo-galeria ">
+  <footer>
+    <p>© 2025 Veterinário – Juntos para Sempre. Todos os direitos reservados.</p>
+  </footer>
 
-                <div class="row justify-content-md-center">
-                    <div class="col-md-4">
-                        <img src="img/lossy-page1-640px-Jorge_Ben_e_o_Trio_Mocotó_no_Teatro_da_Lagoa,_1971.tif.jpg"
-                            class="img-fluid rounded-5" loading="lazy">
-                    </div>
-                    <div class="col-md-4">
-                        <img src="img/lossy-page1-640px-Os_Mutantes_2.tif.jpg" class="img-fluid rounded-5"
-                            loading="lazy">
-                    </div>
-                </div>
-                <div class="row mt-4  justify-content-md-center">
-                    <div class="col-md-4">
-                        <img src="img/lossy-page1-640px-Gilberto_Gil_nos_anos_1960.tif.jpg" class="img-fluid rounded-5" loading="lazy">
-                    </div>
-                    <div class="col-md-4">
-                        <img src="img/lossy-page1-640px-Caetano_Veloso_no_III_Festival_da_Música_Popular.tif.jpg"
-                            class="img-fluid rounded-5" loading="lazy">
-                    </div>
-                </div>
-             </div>
-        </section>
+  <script>
+    function enviarMensagem() {
+      alert("Mensagem enviada com sucesso! Entraremos em contato em breve 🐶🐱");
+    }
+  </script>
 
-        <section id="contato">
-            <div class="container p-5 d-flex justify-content-center">
-                <div class="col-md-8 col-lg-10 rounded-5 formulario"> <!-- Caixa do formulário com 60% de largura -->
-                    <h2 class="mb-3">Entre em contato</h2>
-                    <form>
-                        <div class="form-group mb-3">
-                            <label for="nome">Nome</label>
-                            <input type="text" id="nome" name="nome" class="form-control rounded-3 mt-1"
-                                placeholder="Digite seu nome completo">
-                        </div>
-                        <div class="form-group mb-3">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" class="form-control rounded-3 mt-1"
-                                placeholder="Digite seu email">
-                        </div>
-                        <div class="form-group mb-3">
-                            <label for="mensagem">Mensagem</label>
-                            <textarea id="mensagem" name="mensagem" class="form-control rounded-4 mt-2" rows="4"
-                                placeholder="Escreva sua mensagem"></textarea>
-                        </div>
-                        <div class="d-grid gap-2">
-                            <button type="submit" class="btn btn-primary btn-lg rounded-pill">Enviar
-                                mensagem</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer class="text-center p-3 fst-italic">
-        <p>Acesse nossas redes:</p>
-        <i class="bi bi-whatsapp"></i>
-        <i class="bi bi-instagram"></i>
-        <i class="bi bi-tiktok"></i>
-        <p class="mt-3">Desenvolvido por Start by Alura. Projeto fictício sem fins comerciais.</p>
-    </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.js"></script>
-    <script src="script.js"></script>
-  
 </body>
-
 </html>
