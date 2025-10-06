@@ -9,60 +9,71 @@
 <body>
 
   <header>
-    <h1>Veterinário – Juntos para Sempre</h1>
-    <p>Cuidando com amor dos seus melhores amigos</p>
+    <div class="container">
+      <h1>Veterinário</h1>
+      <p>Juntos para Sempre</p>
+    </div>
   </header>
 
   <nav>
-    <a href="#inicio">Início</a>
-    <a href="#servicos">Serviços</a>
-    <a href="#equipe">Equipe</a>
-    <a href="#contato">Contato</a>
+    <div class="container">
+      <a href="#inicio">Início</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#equipe">Equipe</a>
+      <a href="#contato">Contato</a>
+    </div>
   </nav>
 
-  <section id="inicio">
-    <h2>Bem-vindo à nossa clínica!</h2>
-    <p>Oferecemos atendimento veterinário com carinho, responsabilidade e dedicação. Aqui, o seu pet é parte da nossa família.</p>
+  <section id="inicio" class="container">
+    <h2>Bem-vindo à nossa clínica</h2>
+    <p>Na <strong>Veterinário – Juntos para Sempre</strong>, oferecemos atendimento de excelência para o seu pet, com amor, ética e compromisso. Nossa missão é garantir a saúde e o bem-estar dos animais que são parte da sua família.</p>
   </section>
 
-  <section id="servicos">
-    <h2>Nossos Serviços</h2>
-    <div class="servicos">
+  <section id="servicos" class="container">
+    <h2>Serviços</h2>
+    <div class="grid">
       <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Consultas">
         <h3>Consultas</h3>
-        <p>Atendimento clínico completo para cães e gatos.</p>
+        <p>Atendimento clínico geral com diagnóstico preciso e cuidado humanizado.</p>
       </div>
       <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Vacinação">
         <h3>Vacinação</h3>
-        <p>Proteja seu pet com nossas vacinas atualizadas e seguras.</p>
+        <p>Vacinas seguras e atualizadas para proteger seu pet contra doenças.</p>
       </div>
       <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/616/616554.png" alt="Banho e Tosa">
         <h3>Banho e Tosa</h3>
-        <p>Deixe seu pet limpo, cheiroso e feliz!</p>
+        <p>Serviço completo de estética e higiene para o conforto do seu animal.</p>
       </div>
     </div>
   </section>
 
-  <section id="equipe">
+  <section id="equipe" class="container">
     <h2>Nossa Equipe</h2>
-    <div class="equipe">
-      <div class="card">
+    <div class="grid">
+      <div class="card equipe-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/2922/2922510.png" alt="Dr. João Silva">
         <h3>Dr. João Silva</h3>
-        <p>Veterinário clínico geral</p>
+        <p>Clínico geral e cirurgião veterinário</p>
       </div>
-      <div class="card">
+      <div class="card equipe-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/2922/2922656.png" alt="Dra. Maria Santos">
         <h3>Dra. Maria Santos</h3>
-        <p>Especialista em felinos</p>
+        <p>Especialista em felinos e animais exóticos</p>
       </div>
-      <div class="card">
+      <div class="card equipe-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/2922/2922652.png" alt="Carla Nunes">
         <h3>Carla Nunes</h3>
         <p>Assistente veterinária</p>
       </div>
     </div>
   </section>
 
-  <section id="contato">
-    <h2>Fale Conosco</h2>
+  <section id="contato" class="container">
+    <h2>Contato</h2>
+    <p>Entre em contato conosco e agende uma consulta.</p>
     <form onsubmit="enviarMensagem(); return false;">
       <input type="text" id="nome" placeholder="Seu nome" required>
       <input type="email" id="email" placeholder="Seu e-mail" required>
@@ -72,12 +83,12 @@
   </section>
 
   <footer>
-    <p>© 2025 Veterinário – Juntos para Sempre. Todos os direitos reservados.</p>
+    <p>© 2025 Veterinário – Juntos para Sempre | Todos os direitos reservados</p>
   </footer>
 
   <script>
     function enviarMensagem() {
-      alert("Mensagem enviada com sucesso! Entraremos em contato em breve 🐶🐱");
+      alert("Mensagem enviada com sucesso! 🐶🐱 Entraremos em contato em breve.");
     }
   </script>
 
