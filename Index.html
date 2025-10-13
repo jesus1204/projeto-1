@@ -1,96 +1,115 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Veterinário – Juntos para Sempre</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Tropicália</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+    <header class=" p-5">
 
-  <header>
-    <div class="container">
-      <h1>Veterinário</h1>
-      <p>Juntos para Sempre</p>
-    </div>
-  </header>
+        <nav class="container d-flex justify-content-between align-items-center">
+            <img src="img/logo.png" alt="Logotipo da Tropicália" class="nav-img " loading="lazy">
+            <ul class="nav mt-5">
+                <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+                <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+            </ul>          
+        </nav>
+       
+    </header>
 
-  <nav>
-    <div class="container">
-      <a href="#inicio">Início</a>
-      <a href="#servicos">Serviços</a>
-      <a href="#equipe">Equipe</a>
-      <a href="#contato">Contato</a>
-    </div>
-  </nav>
 
-  <section id="inicio" class="container">
-    <h2>Bem-vindo à nossa clínica</h2>
-    <p>Na <strong>Veterinário – Juntos para Sempre</strong>, oferecemos atendimento de excelência para o seu pet, com amor, ética e compromisso. Nossa missão é garantir a saúde e o bem-estar dos animais que são parte da sua família.</p>
-  </section>
+    <main class="container my-5">
 
-  <section id="servicos" class="container">
-    <h2>Serviços</h2>
-    <div class="grid">
-      <div class="card">
-        <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Consultas">
-        <h3>Consultas</h3>
-        <p>Atendimento clínico geral com diagnóstico preciso e cuidado humanizado.</p>
-      </div>
-      <div class="card">
-        <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Vacinação">
-        <h3>Vacinação</h3>
-        <p>Vacinas seguras e atualizadas para proteger seu pet contra doenças.</p>
-      </div>
-      <div class="card">
-        <img src="https://cdn-icons-png.flaticon.com/512/616/616554.png" alt="Banho e Tosa">
-        <h3>Banho e Tosa</h3>
-        <p>Serviço completo de estética e higiene para o conforto do seu animal.</p>
-      </div>
-    </div>
-  </section>
+        <section id="inicio" class="my-5">
+            <div class="inicio-fundo d-flex justify-content-between align-items-center">
+                <div class="esquerda-conteudo">
+                    <h1 class="display-4 text-white fst-italic fw-bold">Boas-vindas a</h1>
+                    <img src="img/logo-2.png" alt="Logotipo secundário da Tropicália" class="mb-3" width="563"
+                        height="278" loading="lazy">
+                    <a href="#tropicalia"
+                        class="btn btn-primary btn-lg botao-inicio fw-semibold">Quero
+                        conhecer!</a>
+                </div>
 
-  <section id="equipe" class="container">
-    <h2>Nossa Equipe</h2>
-    <div class="grid">
-      <div class="card equipe-card">
-        <img src="https://cdn-icons-png.flaticon.com/512/2922/2922510.png" alt="Dr. João Silva">
-        <h3>Dr. João Silva</h3>
-        <p>Clínico geral e cirurgião veterinário</p>
-      </div>
-      <div class="card equipe-card">
-        <img src="https://cdn-icons-png.flaticon.com/512/2922/2922656.png" alt="Dra. Maria Santos">
-        <h3>Dra. Maria Santos</h3>
-        <p>Especialista em felinos e animais exóticos</p>
-      </div>
-      <div class="card equipe-card">
-        <img src="https://cdn-icons-png.flaticon.com/512/2922/2922652.png" alt="Carla Nunes">
-        <h3>Carla Nunes</h3>
-        <p>Assistente veterinária</p>
-      </div>
-    </div>
-  </section>
+            </div>
+        </section>
 
-  <section id="contato" class="container">
-    <h2>Contato</h2>
-    <p>Entre em contato conosco e agende uma consulta.</p>
-    <form onsubmit="enviarMensagem(); return false;">
-      <input type="text" id="nome" placeholder="Seu nome" required>
-      <input type="email" id="email" placeholder="Seu e-mail" required>
-      <textarea id="mensagem" rows="5" placeholder="Sua mensagem..." required></textarea>
-      <button type="submit">Enviar</button>
-    </form>
-  </section>
+        <section id="tropicalia" class="my-5 pt-6 secao-tropicalia">
+            <div class="container d-flex align-items-center ">
+                  <div class="col-5">
+                    <h2>O que foi a Tropicália?</h2>
+                    <p class="p-2">A Tropicália, também conhecida como Tropicalismo, foi um movimento cultural
+                        brasileiro que surgiu na década de 1960, tendo seu auge entre 1967 e 1968. Esse movimento
+                        abrangeu várias expressões artísticas, como a música, o cinema, o teatro e as artes plásticas, e
+                        teve como principal característica a mistura de elementos da cultura brasileira tradicional com
+                        influências estrangeiras, especialmente do rock e da música pop.</p>
+                </div>
+            </div>
+        </section>
 
-  <footer>
-    <p>© 2025 Veterinário – Juntos para Sempre | Todos os direitos reservados</p>
-  </footer>
+        <section id="galeria">
+            <h2 class="text-center pt-5">Galeria</h2>
+            <div class="container p-3 mt-3 fundo-galeria ">
 
-  <script>
-    function enviarMensagem() {
-      alert("Mensagem enviada com sucesso! 🐶🐱 Entraremos em contato em breve.");
-    }
-  </script>
+                <div class="row justify-content-md-center">
+                    <div class="col-md-4">
+                        <img src="img/lossy-page1-640px-Jorge_Ben_e_o_Trio_Mocotó_no_Teatro_da_Lagoa,_1971.tif.jpg"
+                            class="img-fluid rounded-5" loading="lazy">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/lossy-page1-640px-Os_Mutantes_2.tif.jpg" class="img-fluid rounded-5"
+                            loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato">
+            <div class="container p-5 d-flex justify-content-center">
+                <div class="col-md-8 col-lg-10 rounded-5 formulario"> <!-- Caixa do formulário com 60% de largura -->
+                    <h2 class="mb-3">Entre em contato</h2>
+                    <form>
+                        <div class="form-group mb-3">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" class="form-control rounded-3 mt-1"
+                                placeholder="Digite seu nome completo">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" class="form-control rounded-3 mt-1"
+                                placeholder="Digite seu email">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" class="form-control rounded-4 mt-2" rows="4"
+                                placeholder="Escreva sua mensagem"></textarea>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary btn-lg rounded-pill tamanho-botao">Enviar
+                                mensagem</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="text-center p-3 fst-italic">
+        <p>Acesse nossas redes:</p>
+        <i class="bi bi-whatsapp"></i>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-tiktok"></i>
+        <p class="mt-3">Desenvolvido por Start by Alura. Projeto fictício sem fins comerciais.</p>
+    </footer>
+    <script src="script.js"></script>
 
 </body>
+
 </html>
