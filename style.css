@@ -1,4 +1,4 @@
-@import url(https://upload.wikimedia.org/wikipedia/commons/8/86/Obras_da_Cl%C3%ADnica_Veterin%C3%A1ria_%2851651722117%29.jpg);
+@import url(ttps://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'););
 @import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
 
 :root {
@@ -27,7 +27,7 @@ section {
 
 .inicio-fundo {
     /* aula 3 */
-    background-image: url(' imagem/construção veterinária.pdf);
+    background-image: url('img/4965007.jpg');
     /* Substitua pelo caminho da sua imagem */
     background-size: cover;
     background-position: right;
